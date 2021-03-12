@@ -5,6 +5,7 @@ const pathExists = require('path-exists')
 const htmlmin = require('gulp-htmlmin')
 const fileinclude = require('gulp-file-include')
 const sass = require('gulp-sass')
+const imagemin = require('gulp-imagemin');
 
 // SWALLOW ERROR
 function swallowError(error) {
@@ -27,12 +28,25 @@ function html() {
 
 // SCSS
 function scss(){
-    return src('src/assets/style.scss')
+    return src('src/assets/scss/style.scss')
         .pipe(sass({
             outputStyle: 'compressed' //minifica css
         }))
         .pipe(dest('dist/assets/css'))
     
+}
+
+
+// IMG
+function img(){
+    const pathImg = [
+        "src/assets/img/*.svg",
+        "src/assets/img/*.jpg",
+        "src/assets/img/*.png"
+    ]
+    return src(pathImg)
+        .pipe(imagemin())
+        .pipe(dest('dist/assets/img'))
 }
 
 
@@ -63,13 +77,14 @@ function server(done) {
 function watchFiles(){
     watch("src/**/*.html", series(html, reload))
     watch("src/assets/**/*.scss", series(scss, reload))
+    watch( "src/assets/**/*.svg",  series(img, reload))
 }
 
 
 
 // TAREFAS
 const limpar = series(cleanDist);
-const develop = parallel(html, scss);
+const develop = parallel(html, scss, img);
 const build = () => {
     return pathExists.sync('dist') ? series(limpar, develop) : develop;
 }

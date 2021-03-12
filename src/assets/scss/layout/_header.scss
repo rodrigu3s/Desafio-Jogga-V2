@@ -1,0 +1,63 @@
+header{
+    background-color: #F3DC89;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+
+.contatos{
+    display: flex; 
+    color: #fff;  
+}
+
+.btn-telefone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: #1162DB;
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 12px;
+    min-width: 130px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.img-telefone{
+    padding: 5px;
+    border-radius: 50%;
+    background: #337DEC;
+}
+
+.btn-whatsapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: #03C969;
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 12px;
+    min-width: 130px;
+    cursor: pointer;
+}
+
+.img-whatsapp{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #00E676;
+}
+
+.info-contato{
+    display: flex;
+    flex-direction: column;
+}
