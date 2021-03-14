@@ -1,0 +1,48 @@
+.servico{
+    height: 227px;
+    background-color: $coloryellow;
+    justify-content: center;
+}
+
+.titulo-servico{
+    margin-left: 20px;
+}
+
+.conteudo-servico{
+    max-width: 810px;
+    margin-left: 20px;
+}
+
+.marcas-parceiras{
+    background-color: #F8F7F3;
+    padding: 20px;
+}
+
+.fale-conosco{
+    border: #000 2px solid;
+    padding: 15px;
+}
+
+
+hr{
+    height: 5px;
+    width: 50px;
+    background-color:  $coloryellow;
+}
+
+.telefone{
+    border-radius: 30px;
+    background: #1162DB;
+    padding: 5px 20px;
+    font-weight: bold;
+    min-width: 200px;
+    font-size: 10pt;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.img-telefone{
+    padding: 5px;
+    border-radius: 50%;
+    background: $colorTelefone;
+}

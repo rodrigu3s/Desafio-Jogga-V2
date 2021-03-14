@@ -1,5 +1,5 @@
 header{
-    background-color: #F3DC89;
+    background-color: $colorPrimary;
 }
 
 nav{
@@ -23,7 +23,7 @@ nav{
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    background: #1162DB;
+    background: $colorBtnTelefone;
     padding: 5px 20px;
     font-weight: bold;
     font-size: 12px;
@@ -35,7 +35,8 @@ nav{
 .img-telefone{
     padding: 5px;
     border-radius: 50%;
-    background: #337DEC;
+    background: $colorTelefone;
+    margin-right: 10px;
 }
 
 .btn-whatsapp{
@@ -43,7 +44,7 @@ nav{
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    background: #03C969;
+    background: $colorBtnWhatsapp;
     padding: 5px 20px;
     font-weight: bold;
     font-size: 12px;
@@ -54,7 +55,8 @@ nav{
 .img-whatsapp{
     padding: 5px;
     border-radius: 50%;
-    background-color: #00E676;
+    background-color: $colorWhatsapp;
+    margin-right: 10px;
 }
 
 .info-contato{

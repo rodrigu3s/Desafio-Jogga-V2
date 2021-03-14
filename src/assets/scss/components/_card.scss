@@ -1,0 +1,64 @@
+.como-podemos-ajudar{
+    background-color: $colorgrey;
+}
+
+.podemos-ajudar{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.ajuda{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 200px;
+    background-color: $colorblack;
+    color: $coloryellow;
+    // min-width: 34% 
+}
+
+.titulo-ajuda{
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.conteudo-ajuda{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: justify;
+}
+
+.text-frase-ajuda{
+    margin-left: 1.5em;
+    max-width: 700px;
+}
+
+//skill
+
+.icons-skills{
+    margin-bottom: 1rem;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.icone-mensagem{
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 9pt;
+}

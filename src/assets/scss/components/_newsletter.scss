@@ -1,0 +1,36 @@
+.titulo-lista{
+    font-weight: 500; 
+}
+
+
+/* FALE COM NOSSO TIME */
+
+.fale-com-nosso-time{
+    background-color:#231F20;
+    height:212px;
+}
+
+.nosso-time{
+    align-items: center;
+    justify-content: space-around;
+}
+
+.whatsapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: $colorBtnWhatsapp;
+    padding: 5px 20px;
+    font-weight: bold;
+    min-width: 200px;
+    font-size: 10pt;
+    cursor: pointer;
+}
+
+.img-whatsapp{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: $colorWhatsapp;
+    margin-right: 10px;
+}

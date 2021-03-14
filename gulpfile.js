@@ -42,7 +42,8 @@ function img(){
     const pathImg = [
         "src/assets/img/*.svg",
         "src/assets/img/*.jpg",
-        "src/assets/img/*.png"
+        "src/assets/img/*.png",
+        "src/assets/img/*.JPG"
     ]
     return src(pathImg)
         .pipe(imagemin())

@@ -1,0 +1,91 @@
+.banner{
+    background-color: $colorPrimary;
+}
+
+.tela1{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.titulo-e-form{
+    display: flex;
+}
+
+.titulo-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    min-width: 400px;
+    padding: 0 15px;
+}
+
+.conquiste-mais-clientes{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+
+.face-google{
+    max-width: 250px;
+}
+
+
+
+.titulo-form{
+    padding: 20px;
+    background-color: #231F20;
+    max-width: 438,5px;
+    min-width: 380px;
+    color: #fff;
+}
+
+.form-web{
+    padding:20px;
+    max-width: 438,5px;
+    min-width: 380px;
+    background-color: #fff;
+}
+
+.texto-p{
+    min-width: 474px;
+}
+
+.name{
+    margin-bottom: 1rem!important;
+    display: flex;
+    flex-direction: column;
+}
+.email{
+    margin-bottom: 1rem!important;
+    display: flex;
+    flex-direction: column;
+}
+.fone{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem!important;
+}
+
+.form-label{
+    margin-bottom: 1rem!important;
+}
+
+
+.botao{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.btn-enviar{
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    background-color: $colorBtnTelefone;
+    min-width: 100px;
+    font-weight: bold;
+    font-size:14px;
+    color: #fff;
+}
+
+
