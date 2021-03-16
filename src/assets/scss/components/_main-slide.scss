@@ -30,7 +30,9 @@
     max-width: 250px;
 }
 
-
+.form-mobile{
+    display: none;
+}
 
 .titulo-form{
     padding: 20px;
@@ -87,5 +89,109 @@
     font-size:14px;
     color: #fff;
 }
+
+@media(max-width: 1200px){
+    .mulher-celular{
+        width: 400px;    
+    }
+    
+    .titulo-main{
+        min-width: 250px;
+        padding: 0;
+    }
+
+    .titulo-form{
+        min-width: 300px;
+    }
+
+    .form-web{
+        min-width: 300px;
+    }
+}
+
+@media(max-width: 992px){
+    .mulher-celular{
+        width: 350px;    
+    }
+    
+    .titulo-main{
+        min-width: 200px;
+        padding: 0;
+    }
+
+    .titulo-form{
+        min-width: 300px;
+    }
+
+    .form-web{
+        min-width: 300px;
+    }
+}
+
+@media(max-width: 979px){
+    .titulo-e-form{
+        flex-direction: column;
+    }
+
+    .form-web{
+        padding: 0 10px;
+    }
+}
+
+@media(max-width: 727px){
+    .titulo-form{
+        display: none;
+    }
+
+    .form-web{
+        display: none;
+    }
+
+    .form-mobile{
+        display:inline;
+    }
+}
+
+@media(max-width: 650px){
+    .mulher-celular{
+        width: 250px;    
+    }
+    
+    .titulo-main{
+        min-width: 200px;
+    }
+
+    .face-google{
+        max-width: 150px;
+    }
+
+}
+
+
+@media(max-width: 500px){
+    .mulher-celular{
+        width: 200px; 
+        padding: 0;   
+    }
+    
+    .titulo-main{
+        font-size: 12px;
+        min-width: 130px;
+    }
+
+    .use-anuncios-web{
+        font-size: 12px;
+        min-width: 130px;
+    }
+    .face-google{
+        max-width: 100px;
+    }
+}
+
+
+
+
+
+
 
 

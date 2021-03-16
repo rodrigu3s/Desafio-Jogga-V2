@@ -34,3 +34,41 @@
     background-color: $colorWhatsapp;
     margin-right: 10px;
 }
+
+@media(max-width: 770px){
+    .voce-tera{
+        display: none;
+    }
+
+    .conquiste-mais{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conquiste-clientes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .solucao-vendas{
+        display: none;
+    }
+}
+
+@media(max-width: 500px){
+    .capitura{
+        display: none;
+    }
+
+    .nosso-time{
+        flex-direction: column;
+    }
+
+    .titulo-nosso-time{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

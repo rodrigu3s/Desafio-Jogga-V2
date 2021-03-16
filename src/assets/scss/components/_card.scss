@@ -62,3 +62,14 @@
     font-weight: 500;
     font-size: 9pt;
 }
+
+@media(max-width: 450px){
+    .titulo-ajuda{
+        font-size: 24px;
+        margin-right: 0;
+    }
+
+    .ajuda{
+        padding:0;
+    }
+}

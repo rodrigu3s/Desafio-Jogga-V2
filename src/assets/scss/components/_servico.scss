@@ -46,3 +46,21 @@ hr{
     border-radius: 50%;
     background: $colorTelefone;
 }
+
+@media(max-width:770px){
+    .fale-conosco{
+        border: 2px solid red;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fale-com-time{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+}
+
+
