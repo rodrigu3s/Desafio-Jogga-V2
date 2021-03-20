@@ -34,24 +34,23 @@
                         <p class="text-center">Soluções personalizadas para sua empresa. Fale conosco.</p>
                     </div>
 
-                    <form class="form-web" name="f1">
+                    <form class="form-web" id="form-web" name="f1">
 
                         <div class="name">
-                            <label for="formGroupExampleInput" class="form-label">NOME</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" required maxlength="100">
+                            <label for="nome" class="form-label">NOME</label>
+                            <input type="text" class="form-control" id="nome" name="nome" maxlength="50">
                         </div>
 
                         <div class="email">
-                            <label for="formGroupExampleInput2" class="form-label">E-MAIL</label>
-                            <input type="text" name="email" class="form-control" id="formGroupExampleInput2"
-                                placeholder="lucinanof_@dominio.com" required maxlength="100"
-                                onblur="validacaoEmail(f1.email)">
+                            <label for="email" class="form-label">E-MAIL</label>
+                            <input type="text" name="email" class="form-control" id="email" name="email"
+                                placeholder="lucinanof_@dominio.com" maxlength="50">
                             <div id="msgemail"></div>
                         </div>
 
                         <div class="fone">
-                            <label for="formGroupExampleInput3" class="form-label">TELEFONE</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput3" required>
+                            <label for="phone" class="form-label">TELEFONE</label>
+                            <input type="text" class="form-control" id="phone" name="phone" >
                         </div>
 
 

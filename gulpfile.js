@@ -5,7 +5,9 @@ const pathExists = require('path-exists')
 const htmlmin = require('gulp-htmlmin')
 const fileinclude = require('gulp-file-include')
 const sass = require('gulp-sass')
-const imagemin = require('gulp-imagemin');
+const imagemin = require('gulp-imagemin')
+const concat = require('gulp-concat')
+const uglify = require('gulp-uglify')
 
 // SWALLOW ERROR
 function swallowError(error) {
@@ -23,6 +25,21 @@ function html() {
         .pipe(htmlmin({collapseWhitespace: true })) // minifica html
         .on('error', swallowError)
         .pipe(dest("dist/"))
+}
+
+// JS
+function scripts(){
+    const fileJS = [
+        'src/assets/js/jquery.js',
+        'src/assets/js/jquery.mask.min.js',
+        'src/assets/js/jquery.validate.min.js',
+        'src/assets/js/main.js'
+    ]
+    return src(fileJS)
+        .pipe(concat('index.js'))
+        // .pipe(uglify())
+        .on('error', swallowError)
+        .pipe(dest('dist/assets/js'))
 }
 
 
@@ -85,7 +102,7 @@ function watchFiles(){
 
 // TAREFAS
 const limpar = series(cleanDist);
-const develop = parallel(html, scss, img);
+const develop = parallel(html, scss, img, scripts);
 const build = () => {
     return pathExists.sync('dist') ? series(limpar, develop) : develop;
 }

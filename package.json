@@ -25,6 +25,7 @@
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.14",
     "font-awesome": "^4.7.0",
-    "gulp-concat": "^2.6.1"
+    "gulp-concat": "^2.6.1",
+    "gulp-jquery": "^1.1.2"
   }
 }
